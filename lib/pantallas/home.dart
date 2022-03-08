@@ -12,15 +12,6 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(
-          leading: Builder(
-            builder: (BuildContext context) {
-              return IconButton(
-                icon: const Icon(Icons.menu),
-                onPressed: () => Navigator.pushNamed(context, 'detalles',
-                    arguments: 'movie'),
-              );
-            },
-          ),
           centerTitle: true,
           title: const Text('Peliculas en cines'),
           actions: [
